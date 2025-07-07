@@ -28,7 +28,12 @@ console.log(clothings)
 					>
 				</a>
 				<ul class="flex bg-red-600">
-					{clothings.map((clothing) => (<li>{clothing.data.Title}</li>))}
+					{clothings.map((clothing) => (<li>
+						<p>
+						<span>{clothing.data.Title}</span>
+							<img src={`http://localhost:1337${clothing.data.Medias[0].url}`} width="115" height="48" alt="Astro Homepage" />
+						</p>
+						</li>))}
 				</ul>
 			</section>
 		</section>
