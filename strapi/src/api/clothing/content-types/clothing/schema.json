@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "clothings",
+  "info": {
+    "singularName": "clothing",
+    "pluralName": "clothings",
+    "displayName": "Clothing"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "Title": {
+      "type": "string"
+    },
+    "Description": {
+      "type": "text"
+    },
+    "Medias": {
+      "type": "media",
+      "multiple": true,
+      "allowedTypes": [
+        "images",
+        "videos"
+      ]
+    },
+    "Slug": {
+      "type": "uid",
+      "targetField": "Title"
+    }
+  }
+}
