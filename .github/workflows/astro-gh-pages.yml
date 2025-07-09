@@ -9,6 +9,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
+    env:
+      STRAPI_BASE_URL: ${{ secrets.STRAPI_BASE_URL }}
     defaults:
       run:
         working-directory: ./astro
