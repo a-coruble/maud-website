@@ -11,7 +11,6 @@ const clothings = defineCollection({
                 id: clothing.documentId,
             }
         })
-        console.log(data)
         return data
     }
  });
