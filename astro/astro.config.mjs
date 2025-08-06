@@ -5,8 +5,8 @@ import tailwindcss from '@tailwindcss/vite';
 
 // https://astro.build/config
 export default defineConfig({
-  site: "https://a-coruble.github.io/maud-website",
-  base: "/maud-website",
+  site: "https://maud-website.netlify.app",
+  // base: "/maud-website",
   vite: {
     plugins: [tailwindcss()]
   }
